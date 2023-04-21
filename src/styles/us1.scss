@@ -1,0 +1,26 @@
+.us1{
+    background-color: lightgreen;
+    height: 100vh;
+    .one
+    {
+        height: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 3rem;
+    }
+    .one input{
+        font-size: 2rem;
+        
+    }
+    .one button{
+        height: 2rem;
+        width: 4rem;
+        background-color: lightseagreen;
+        border: solid green;
+        color: black;
+
+    }
+}

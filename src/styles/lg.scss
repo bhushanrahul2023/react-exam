@@ -1,0 +1,28 @@
+.lg{
+    background-color: lightsalmon;
+    .lg1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        text-transform: capitalize;
+        text-decoration: underline;
+        gap: 2rem;
+        font-size: 2rem
+
+     
+
+    }
+    .lg1 input{
+        height: 2rem;
+    }
+    .lg1 button{
+        height: 2rem;
+        border-radius: 5%;
+        background-color: red;
+        color: yellow;
+        border: 1px solid yellow;
+    }
+
+}

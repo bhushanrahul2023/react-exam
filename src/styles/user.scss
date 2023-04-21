@@ -1,0 +1,28 @@
+.user{
+    background-color: lightblue;
+    height: 100rem;
+
+
+    .u1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    
+}
+    p{
+        text-transform: capitalize;
+        font-size: 5rem;
+        text-decoration: underline;
+        text-shadow: 1px 1px 1px 1px slategray;
+    }
+    
+ 
+
+    button{
+        font-size: 3rem;
+        border-radius: 5%;
+    }
+}

@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import User from "./components/user";
+import{Routes,Route} from "react-router-dom";
+import Userdetails from "./components/userdetails";
+import Logindetails from "./components/logindetails";
+import End from "./components/end";
+import {useState} from "react";
 function App() {
+  const [firstname, setFirstname] = useState('');
+  const [middlename, setMiddlename]= useState('');
+  const [lastname, setLastname]=useState('');
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<User firstname={firstname} setFirstname={setFirstname}  middlename={middlename} setMiddlename={setMiddlename}
+      lastname={lastname} setLastname={setLastname} />}
+      />
+      <Route path="/userdetails" element={<Userdetails />} />
+      <Route path="/logindetails" element={<Logindetails />} />
+      <Route path="/end" element={<End firstname={firstname}  middlename={middlename} lastname={lastname}/>} />
+    </Routes>
+
   );
 }
 
